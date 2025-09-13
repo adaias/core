@@ -1,0 +1,34 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+                             https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.afm.projects</groupId>
+    <artifactId>base</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <relativePath/> <!-- para forzar uso del repo central -->
+  </parent>
+
+  <artifactId>core</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <name>Proyecto Multimódulo Quarkus</name>
+
+  <modules>
+    <module>base</module>
+    <module>commons</module>
+    
+  </modules>
+
+  <dependencies>
+    <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-rest</artifactId>
+        </dependency>
+  </dependencies>
+
+</project>
